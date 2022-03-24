@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #header{
+            height: 100px;
+        }
+        #header .left{
+            height: 100px;
+            width: 19%;
+            background-color: palevioletred;
+            float: left;
+        }
+        #header .center{
+            height: 100px;
+            width: 60%;
+            background-color: greenyellow;
+            float: left;
+            margin: 0 1%;
+        }
+        #header .right{
+            height: 100px;
+            width: 19%;
+            background-color: lightblue;
+            float: left;
+        }
+        #nav{
+            width: 100%;
+            height: 50px;
+            margin: 10px 0;
+            background-color: burlywood;
+        }
+        #main{
+            height: 800px;
+        }
+        #content{
+            width: 79%;
+            height: 100%;
+            float: left;
+        }
+        #content .left1{
+            width: 49%;
+            height: 49%;
+            float: left;
+            background-color: lightgray;
+            margin-right: 1%;
+            margin-bottom: 1%;
+        }
+        #content .left2{
+            width: 49%;
+            height: 50%;
+            float: left;
+            /* 清除浮动产生的位置错乱影响，但不会改变浮动的效果 */
+            clear: left;
+            background-color: lightgray;
+        }
+        #content .right1{
+            width: 49%;
+            height: 49%;
+            float: right;
+            background-color: lightgray;
+        }
+        #content .right2{
+            width: 49%;
+            height: 50%;
+            float: right;
+            margin-right: 10px;
+            background-color: lightgray;
+        }
+        #aside{
+            width: 20%;
+            height: 800px;
+            float: right;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div id="nav"></div>
+    <div id="main">
+        <div id="content">
+            <div class="left1"></div>
+            <div class="right1"></div>
+            <div class="left2"></div>
+            <div class="right2"></div>
+        </div>
+        <div id="aside"></div>
+    </div>
+</body>
+</html>
