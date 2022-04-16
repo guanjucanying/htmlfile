@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #div{
+            width: 200px;
+            background-color: #ccc;
+        }
+        #div li{
+            font-size: 12px;
+        }
+        #div .first{
+            font-size: 14px;
+            color: #ff7300;
+            font-weight: bold;
+        }
+        .nav1{
+            width: 500px;
+        }
+        p:nth-child(1){
+            height: 30px;
+            text-align: left;
+            /* 决定文字是否有划线 */
+            text-decoration: overline;
+            /* 决定文字是否带阴影 */
+            text-shadow: 5px 5px 2px red;
+        }
+        p:nth-child(2){
+            height: 30px;
+            text-align: center;
+            text-decoration: line-through;
+            text-shadow: 5px 3px 3px lightblue,5px -3px 3px greenyellow;
+        }
+        p:nth-child(3){
+            height: 30px;
+            text-align: right;
+            text-decoration: underline;
+        }
+        #testTransition{
+            border: 5px solid gainsboro;
+            width: 100px;
+            height: 20px;
+            background-color: lightblue;
+            transition: width 2s .2s;
+        }
+        #testTransition:hover{
+            width: 200px;
+        }
+    </style>
+    <div id="div">
+        <ul>
+            <li class="first">大家电</li>
+            <li>洗衣机</li>
+            <li>电冰箱</li>
+            <li>平板电视</li>
+        </ul>
+        <ul>
+            <li class="first">大家电</li>
+            <li>洗衣机</li>
+            <li>电冰箱</li>
+            <li>平板电视</li>
+        </ul>
+    </div>
+    <div class="nav1">
+        <p>这是文字居左对齐的段落</p>
+        <p>这是文字居中对齐的段落</p>
+        <p>这是文字居右对齐的段落</p>
+    </div>
+    <div id="testTransition"></div>
+    
+</body>
+</html>

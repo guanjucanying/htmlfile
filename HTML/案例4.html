@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #plane img{
+            /* 动画无限循环播放并在动画结束的时候继续从该状态下继续进行 */
+            animation: myplane 10s ease infinite forwards;
+            position: absolute;
+        }
+        @keyframes myplane{
+            0%{
+                top:0px;
+                left: 0px;
+            }
+            50%{
+                top: 35%;
+                left: 90%;
+                transform: rotateY(180deg);
+            }
+            100%{
+                top:80%;
+                left:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="plane">
+        <img src="../img/1.webp" width="100" height="50">
+    </div>
+</body>
+</html>
